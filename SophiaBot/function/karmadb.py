@@ -1,4 +1,4 @@
-from Sophia.db.mongohelpers.mongo3 import db
+from SophiaBot.db.mongohelpers.mongo3 import db
 from typing import Dict, List, Union
 
 
