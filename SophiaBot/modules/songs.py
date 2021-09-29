@@ -1,5 +1,22 @@
 # Credits for @DihanOfficial
 
+# Copyright (C) 2021 dihan official
+
+
+# This file is part of Sophia (Telegram Bot)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
 
@@ -7,8 +24,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from Sophia import pbot as Dihan
-from Sophia.pyrogramee.dark import get_arg
+from SophiaBot import pbot as Dihan
+from SophiaBot.pyrogramee.dark import get_arg
 
 
 @Dihan.on_message(filters.command("saavn"))
@@ -45,7 +62,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from Sophia import pbot as Sophia
+from SophiaBot import pbot as Sophia
 
 ARQ = "https://thearq.tech/"
 
@@ -99,7 +116,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from Sophia import pbot as CHABEE
+from SophiaBot import pbot as CHABEE
 
 ARQ = "https://thearq.tech/"
 
@@ -155,5 +172,7 @@ __help__ = """
 • `/deezer`** <songname>: download from deezer
 • `/lyrics`** <songname artist(optional)>: sends the complete lyrics of the song provided as input
 • `/glyrics`** <i> song name </i> : This plugin searches for song lyrics with song name and artist.
+
+@SophiaSLBot 
 """
 
