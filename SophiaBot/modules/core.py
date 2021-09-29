@@ -27,7 +27,7 @@ from SophiaBot import OWNER_ID, DEV_USERS
 from SophiaBot import TEMP_DOWNLOAD_DIRECTORY as path
 from SophiaBot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './Sophia/resources/yone.jpg'
+water = './SophiaBot/resources/yone.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -39,7 +39,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./Sophia/modules/{}.py".format(input_str)
+    the_plugin_file = "./SophiaBot/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
