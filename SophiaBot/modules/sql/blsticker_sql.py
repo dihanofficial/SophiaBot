@@ -1,6 +1,6 @@
 import threading
 
-from Sophia.modules.sql import BASE, SESSION
+from SophiaBot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
 
 
