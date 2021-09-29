@@ -1,3 +1,21 @@
+# Copyright (C) 2021 dihan official
+
+# This file is part of Sophia (Telegram Bot)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 
 import asyncio
 import os
@@ -12,21 +30,21 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from Sophia import BOT_ID
-from Sophia.conf import get_int_key, get_str_key
+from SophiaBot import BOT_ID
+from SophiaBot.conf import get_int_key, get_str_key
 
 
-from Sophia.pyrogramee.telethonbasics import is_admin
-from Sophia.events import register
-from Sophia import MONGO_DB_URI 
+from SophiaBot.pyrogramee.telethonbasics import is_admin
+from SophiaBot.events import register
+from SophiaBot import MONGO_DB_URI 
 from pymongo import MongoClient
-from Sophia.modules.sql_extended.nsfw_watch_sql import (
+from SophiaBot.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from Sophia import telethn as tbot
+from SophiaBot import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
@@ -431,13 +449,13 @@ async def del_profanity(event):
                     await dev.delete()
  
  
-#
+
  
 __help__ = """
-<b> Group Guardian: </b>
+*Group Guardian:*
 ✪ Sophia can protect your group from NSFW senders, Slag word users and also can force members to use English
  
-<b>Commmands</b>
+*Commmands*
  - /nsfwguardian <i>on/off</i> - Enable|Disable Porn cleaning
  - /globalmode <i>on/off</i> - Enable|Disable English only mode
  - /profanity <i>on/off</i> - Enable|Disable slag word cleaning
@@ -445,5 +463,5 @@ __help__ = """
 Note: Special credits goes to Julia project and Friday Userbot
  
 """
-__mod_name__ = "Group Guardian ⚔️"
+__mod_name__ = "Group Guardian"
  
