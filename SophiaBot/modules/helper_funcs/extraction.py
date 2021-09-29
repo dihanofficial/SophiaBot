@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from Sophia import LOGGER
-from Sophia.modules.users import get_user_id
+from SophiaBot import LOGGER
+from SophiaBot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
