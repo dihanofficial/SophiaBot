@@ -1,4 +1,4 @@
-from Sophia import LOAD, LOGGER, NO_LOAD
+from SophiaBot import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
