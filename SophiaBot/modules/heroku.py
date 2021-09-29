@@ -1,3 +1,22 @@
+# Copyright (C) 2021 dihan official
+
+# This file is part of Sophia (Telegram Bot)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
 import asyncio
 import math
 import os
@@ -5,8 +24,8 @@ import os
 import heroku3
 import requests
 
-from Sophia import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from Sophia.events import register
+from SophiaBot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from SophiaBot.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
