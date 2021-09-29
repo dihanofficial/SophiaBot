@@ -3,7 +3,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean
 
-from Sophia.modules.sql import SESSION, BASE
+from SophiaBot.modules.sql import SESSION, BASE
 
 
 class AntiArabicChatSettings(BASE):
