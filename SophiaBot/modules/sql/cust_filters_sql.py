@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from Sophia.modules.helper_funcs.msg_types import Types
-from Sophia.modules.sql import BASE, SESSION
+from SophiaBot.modules.helper_funcs.msg_types import Types
+from SophiaBot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
