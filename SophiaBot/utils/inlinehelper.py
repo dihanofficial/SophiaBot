@@ -19,9 +19,9 @@ from pyrogram.types import (
 )
 from search_engine_parser import GoogleSearch
 
-from Sophia import BOT_USERNAME, OWNER_ID, pbot, arq
-from Sophia.pyrogramee.pluginshelper import convert_seconds_to_minutes as time_convert
-from Sophia.pyrogramee.pluginshelper import fetch
+from SophiaBot import BOT_USERNAME, OWNER_ID, pbot, arq
+from SophiaBot.pyrogramee.pluginshelper import convert_seconds_to_minutes as time_convert
+from SophiaBot.pyrogramee.pluginshelper import fetch
 
 SUDOERS = OWNER_ID
 app = pbot
