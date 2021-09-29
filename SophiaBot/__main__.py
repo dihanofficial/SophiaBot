@@ -6,7 +6,7 @@ from sys import argv
 from typing import Optional
 from pyrogram import filters, idle
 
-from Sophia import (
+from SophiaBot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -27,10 +27,10 @@ from Sophia import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Sophia.modules import ALL_MODULES
-from Sophia.modules.helper_funcs.chat_status import is_user_admin
-from Sophia.modules.helper_funcs.misc import paginate_modules
-from Sophia.modules.sudoers import bot_sys_stats
+from SophiaBot.modules import ALL_MODULES
+from SophiaBot.modules.helper_funcs.chat_status import is_user_admin
+from SophiaBot.modules.helper_funcs.misc import paginate_modules
+from SophiaBot.modules.sudoers import bot_sys_stats
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -124,7 +124,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Sophia.modules." + module_name)
+    imported_module = importlib.import_module("SophiaBot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
