@@ -19,21 +19,21 @@
 
 
 import os
-from Sophia import telethn as tbot
-from Sophia import VIRUS_API_KEY
+from SophiaBot import telethn as tbot
+from SophiaBot import VIRUS_API_KEY
 
 from telethon import events
 from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import MessageMediaDocument, DocumentAttributeFilename
 from pymongo import MongoClient
-from Sophia import MONGO_DB_URI
-from Sophia.events import register
+from SophiaBot import MONGO_DB_URI
+from SophiaBot.events import register
 import cloudmersive_virus_api_client
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Sophia"]
+db = client["SophiaBot"]
 approved_users = db.approve
 
 
@@ -133,7 +133,7 @@ file_helpo = file_help.replace("_", " ")
 __help__ = """
  - /scanit: Scan a file for virus (MAX SIZE = 3MB)
 
- *Powerted by* @DihanOfficial 🥳
+ *Powerted by* @SophiaUpdates ❤
 """
 
 __mod_name__ = "Virus Scan"
