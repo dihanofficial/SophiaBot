@@ -1,7 +1,7 @@
 import threading
 
-from Sophia import dispatcher
-from Sophia.modules.sql import BASE, SESSION
+from SophiaBot import dispatcher
+from SophiaBot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 
