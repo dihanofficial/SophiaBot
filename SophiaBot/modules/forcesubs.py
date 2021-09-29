@@ -1,5 +1,23 @@
 # credits @InukaAsith, @Mr_dark_prince
 
+# Copyright (C) 2021 dihan official
+
+# This file is part of Sophia (Telegram Bot)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 import logging
 import time
 
@@ -12,9 +30,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from Sophia import DRAGONS as SUDO_USERS
-from Sophia import pbot
-from Sophia.modules.sql_extended import forceSubscribe_sql as sql
+from SophiaBot import DRAGONS as SUDO_USERS
+from SophiaBot import pbot
+from SophiaBot.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -181,6 +199,7 @@ def config(client, message):
 
 __help__ = """
 *ForceSubscribe:*
+
 - Sophia can mute members who are not subscribed your channel until they subscribe
 - When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 *Setup*
