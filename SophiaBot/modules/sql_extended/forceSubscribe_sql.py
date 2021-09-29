@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Numeric, Boolean
-from Sophia.modules.sql import BASE, SESSION
+from SophiaBot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
