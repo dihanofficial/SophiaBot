@@ -1,6 +1,6 @@
 import sys
 from envparse import env
-from Sophia import LOGGER
+from SophiaBot import LOGGER
 
 
 DEFAULTS = {
