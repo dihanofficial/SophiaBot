@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from Sophia.modules.helper_funcs.msg_types import Types
-from Sophia.modules.sql import BASE, SESSION
+from SophiaBot.modules.helper_funcs.msg_types import Types
+from SophiaBot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
