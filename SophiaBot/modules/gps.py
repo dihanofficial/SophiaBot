@@ -1,8 +1,8 @@
 import os
-from Sophia import telethn as tbot
+from SophiaBot import telethn as tbot
 from geopy.geocoders import Nominatim
-from Sophia.events import register
-from Sophia import *
+from SophiaBot.events import register
+from SophiaBot import *
 from telethon import *
 from telethon.tl import *
 
