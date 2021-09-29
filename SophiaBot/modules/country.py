@@ -5,8 +5,8 @@ from telethon.utils import get_input_location
 import flag
 import html, os
 from countryinfo import CountryInfo
-from Sophia import telethn as borg
-from Sophia.events import register
+from SophiaBot import telethn as borg
+from SophiaBot.events import register
 
 
 @register(pattern="^/country (.*)")
@@ -119,6 +119,8 @@ __help__ = """
 
 *Commands*
 - /country [country name]*:* Gathering info about given country
+
+@SophiaUpdates
 """
 
 __mod_name__ = "Country"
