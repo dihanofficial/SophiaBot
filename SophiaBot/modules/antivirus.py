@@ -1,6 +1,5 @@
 # Copyright (C) 2021 dihan official
 
-
 # This file is part of Sophia (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
