@@ -1,14 +1,14 @@
-from Sophia import telethn as tbot
+from SophiaBot import telethn as tbot
 from telethon import *
 from pymongo import MongoClient
-from Sophia import MONGO_DB_URI
-from Sophia.events import register
+from SophiaBot import MONGO_DB_URI
+from SophiaBot.events import register
 import dateparser 
 import os, asyncio
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Sophia"]
+db = client["SophiaBot"]
 alarms = db.alarm
 approved_users = db.approve
 
