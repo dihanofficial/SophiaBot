@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Integer, func, distinct
 
-from Sophia.modules.sql import BASE, SESSION
+from SophiaBot.modules.sql import BASE, SESSION
 
 
 class Approvals(BASE):
