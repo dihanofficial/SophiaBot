@@ -7,7 +7,7 @@ from random import randint
 from re import findall
 from time import time
 from datetime import timedelta, datetime
-from Sophia import aiohttpsession as aiosession
+from Sophiabot import aiohttpsession as aiosession
 import aiofiles
 import aiohttp
 import speedtest
