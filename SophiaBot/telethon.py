@@ -1,6 +1,6 @@
 from telethon import TelegramClient
 
-from Sophia.conf import get_int_key, get_str_key
+from SophiaBot.conf import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 NAME = TOKEN.split(":")[0]
