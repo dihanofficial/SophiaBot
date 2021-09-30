@@ -3,8 +3,8 @@ from google_trans_new import LANGUAGES, google_translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
+from SophiaBot import dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
