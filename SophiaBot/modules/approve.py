@@ -1,11 +1,11 @@
 import html
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia import dispatcher, DRAGONS
-from Sophia.modules.helper_funcs.extraction import extract_user
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot import dispatcher, DRAGONS
+from SophiaBot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import Sophia.modules.sql.approve_sql as sql
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.log_channel import loggable
+import SophiaBot.modules.sql.approve_sql as sql
+from SophiaBot.modules.helper_funcs.chat_status import user_admin
+from SophiaBot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
@@ -199,6 +199,7 @@ __help__ = """
 Sometimes, you might trust a user not to send unwanted content.
 Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.
 That's what approvals are for - approve of trustworthy users to allow them to send 
+
 *Admin commands:*
 - /approval*:* Check a user's approval status in this chat.
 - /approve*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
