@@ -11,8 +11,8 @@ from Sophia.modules.helper_funcs.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.sql import antiflood_sql as sql
+from SophiaBot.modules.log_channel import loggable
+from SophiaBot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from Sophia.modules.helper_funcs.string_handling import extract_time
-from Sophia.modules.connection import connected
-from Sophia.modules.helper_funcs.alternate import send_message
-from Sophia.modules.sql.approve_sql import is_approved
+from SophiaBot.modules.helper_funcs.string_handling import extract_time
+from SophiaBot.modules.connection import connected
+from SophiaBot.modules.helper_funcs.alternate import send_message
+from SophiaBot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
