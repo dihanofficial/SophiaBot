@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import Sophia.modules.sql.notes_sql as sql
-from Sophia import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from Sophia.__main__ import DATA_IMPORT
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.helper_funcs.alternate import typing_action
+import SophiaBot.modules.sql.notes_sql as sql
+from SophiaBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from SophiaBot.__main__ import DATA_IMPORT
+from SophiaBot.modules.helper_funcs.chat_status import user_admin
+from SophiaBot.modules.helper_funcs.alternate import typing_action
 
-# from Sophia.modules.rules import get_rules
-import Sophia.modules.sql.rules_sql as rulessql
+# from SophiaBot.modules.rules import get_rules
+import SophiaBot.modules.sql.rules_sql as rulessql
 
-# from Sophia.modules.sql import warns_sql as warnssql
-import Sophia.modules.sql.blacklist_sql as blacklistsql
-from Sophia.modules.sql import disable_sql as disabledsql
+# from SophiaBot.modules.sql import warns_sql as warnssql
+import SophiaBot.modules.sql.blacklist_sql as blacklistsql
+from SophiaBot.modules.sql import disable_sql as disabledsql
 
-# from Sophia.modules.sql import cust_filters_sql as filtersql
-# import Sophia.modules.sql.welcome_sql as welcsql
-import Sophia.modules.sql.locks_sql as locksql
-from Sophia.modules.connection import connected
+# from SophiaBot.modules.sql import cust_filters_sql as filtersql
+# import SophiaBot.modules.sql.welcome_sql as welcsql
+import SophiaBot.modules.sql.locks_sql as locksql
+from SophiaBot.modules.connection import connected
 
 
 @run_async
@@ -325,7 +325,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    with open("Sophia{}.backup".format(chat_id), "w") as f:
+    with open("SophiaBot{}.backup".format(chat_id), "w") as f:
         f.write(str(baccinfo))
     context.bot.sendChatAction(current_chat_id, "upload_document")
     tgl = time.strftime("%H:%M:%S - %d/%m/%Y", time.localtime(time.time()))
@@ -341,7 +341,7 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("Sophia{}.backup".format(chat_id), "rb"),
+        document=open("SophiaBot{}.backup".format(chat_id), "rb"),
         caption="💾*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Sophia-Backup` was specially made for notes 📚.".format(
             chat.title, chat_id, tgl
         ),
@@ -349,7 +349,7 @@ def export_data(update, context):
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("Sophia{}.backup".format(chat_id))  # Cleaning file
+    os.remove("SophiaBot{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data
