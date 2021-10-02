@@ -4,8 +4,8 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from Sophia import TIGERS, WOLVES, dispatcher
-from Sophia.modules.helper_funcs.chat_status import (
+from SophiaBot import TIGERS, WOLVES, dispatcher
+from SophiaBot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
