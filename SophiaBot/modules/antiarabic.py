@@ -4,10 +4,10 @@ from telegram import Update, Bot, ParseMode
 from telegram.ext import CallbackContext, CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 
-from Sophia import dispatcher
-from Sophia.modules.helper_funcs.chat_status import user_not_admin, user_admin, can_delete
-from Sophia.modules.helper_funcs.extraction import extract_text
-from Sophia.modules.sql import antiArabic_sql as sql
+from SophiaBot import dispatcher
+from SophiaBot.modules.helper_funcs.chat_status import user_not_admin, user_admin, can_delete
+from SophiaBot.modules.helper_funcs.extraction import extract_text
+from SophiaBot.modules.sql import antiArabic_sql as sql
 
 ANTIARABIC_GROUPS = 12
 
