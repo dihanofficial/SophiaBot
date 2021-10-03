@@ -1,6 +1,6 @@
-from Sophia import telethn as tbot
-from Sophia import MONGO_DB_URI
-from Sophia.events import register
+from SophiaBot import telethn as tbot
+from SophiaBot import MONGO_DB_URI
+from SophiaBot.events import register
 from telethon import *
 from telethon.tl import functions
 from pymongo import MongoClient
@@ -9,7 +9,7 @@ import subprocess
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Sophia"]
+db = client["SophiaBot"]
 approved_users = db.approve
 
 
@@ -87,4 +87,4 @@ You can simply draw a border(a black square) around the portion you want to scan
 If you are still messed up send `/helpcamscanner` in pm for the tutorial !
 """
 
-__mod_name__ = "CamScanner"
+__mod_name__ = "Cam Scanner"
