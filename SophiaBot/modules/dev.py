@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import Sophia
+import SophiaBot
 
-from Sophia import dispatcher
-from Sophia.modules.helper_funcs.chat_status import dev_plus
+from SophiaBot import dispatcher
+from SophiaBot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
