@@ -1,8 +1,8 @@
 from pyrogram import filters
 
-from Sophia import pbot
-from Sophia.utils.errors import capture_err
-from Sophia.function.carbonhelper import make_carbon
+from SophiaBot import pbot
+from SophiaBot.utils.errors import capture_err
+from SophiaBot.function.carbonhelper import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
