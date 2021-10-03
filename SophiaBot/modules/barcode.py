@@ -1,4 +1,4 @@
-from Sophia import telethn as tbot
+from SophiaBot import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -12,12 +12,12 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Sophia import *
-from Sophia.events import register
+from SophiaBot import *
+from SophiaBot.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Sophia"]
+db = client["SophiaBot"]
 approved_users = db.approve
 
 
