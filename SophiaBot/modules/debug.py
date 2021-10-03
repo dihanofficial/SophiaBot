@@ -5,8 +5,8 @@ from telethon import events
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from Sophia import telethn, dispatcher
-from Sophia.modules.helper_funcs.chat_status import dev_plus
+from SophiaBot import telethn, dispatcher
+from SophiaBot.modules.helper_funcs.chat_status import dev_plus
 
 DEBUG_MODE = False
 
