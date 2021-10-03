@@ -1,3 +1,6 @@
+# Special Thanks @TeamDaisyX 
+# TeamSophia
+
 import os
 import re
 
@@ -5,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 from telethon import events
 
-from Sophia import telethn as tbot
+from SophiaBot import telethn as tbot
 
 
 @tbot.on(events.NewMessage(pattern="^/books (.*)"))
