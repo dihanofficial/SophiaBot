@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import Sophia.modules.sql.blacklist_sql as sql
-from Sophia import dispatcher, LOGGER
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Sophia.modules.helper_funcs.extraction import extract_text
-from Sophia.modules.helper_funcs.misc import split_message
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.warns import warn
-from Sophia.modules.helper_funcs.string_handling import extract_time
-from Sophia.modules.connection import connected
-from Sophia.modules.sql.approve_sql import is_approved
-from Sophia.modules.helper_funcs.alternate import send_message, typing_action
+import SophiaBot.modules.sql.blacklist_sql as sql
+from SophiaBot import dispatcher, LOGGER
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from SophiaBot.modules.helper_funcs.extraction import extract_text
+from SophiaBot.modules.helper_funcs.misc import split_message
+from SophiaBot.modules.log_channel import loggable
+from SophiaBot.modules.warns import warn
+from SophiaBot.modules.helper_funcs.string_handling import extract_time
+from SophiaBot.modules.connection import connected
+from SophiaBot.modules.sql.approve_sql import is_approved
+from SophiaBot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
