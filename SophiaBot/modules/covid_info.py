@@ -2,8 +2,8 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
+from SophiaBot import dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -26,7 +26,8 @@ dispatcher.add_handler(COVID_HANDLER)
 __mod_name__ = "Covid"
 
 __help__ = """
-Commands     
+*Commands*
+     
 • /covid - To Get Global Stats of Covid.
 • /covid [COUNTRY] - To Get Stats of A Single Country.
 • /corona - Same as `/covid`
