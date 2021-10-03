@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from Sophia import dispatcher
-from Sophia.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from Sophia.modules.helper_funcs.misc import is_module_loaded
+from SophiaBot import dispatcher
+from SophiaBot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from SophiaBot.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -235,7 +235,7 @@ if is_module_loaded(FILENAME):
         chat = update.effective_chat
 
         if len(args) >= 1:
-            enable_module = "Sophia.modules." + args[0].rsplit(".", 1)[0]
+            enable_module = "SophiaBot.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(enable_module)
