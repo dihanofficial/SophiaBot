@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from Sophia import dispatcher, LOGGER, DRAGONS
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.handlers import MessageHandlerChecker
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.helper_funcs.extraction import extract_text
-from Sophia.modules.helper_funcs.filters import CustomFilters
-from Sophia.modules.helper_funcs.misc import build_keyboard_parser
-from Sophia.modules.helper_funcs.msg_types import get_filter_type
-from Sophia.modules.helper_funcs.string_handling import (
+from SophiaBot import dispatcher, LOGGER, DRAGONS
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.helper_funcs.handlers import MessageHandlerChecker
+from SophiaBot.modules.helper_funcs.chat_status import user_admin
+from SophiaBot.modules.helper_funcs.extraction import extract_text
+from SophiaBot.modules.helper_funcs.filters import CustomFilters
+from SophiaBot.modules.helper_funcs.misc import build_keyboard_parser
+from SophiaBot.modules.helper_funcs.msg_types import get_filter_type
+from SophiaBot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from Sophia.modules.sql import cust_filters_sql as sql
+from SophiaBot.modules.sql import cust_filters_sql as sql
 
-from Sophia.modules.connection import connected
+from SophiaBot.modules.connection import connected
 
-from Sophia.modules.helper_funcs.alternate import send_message, typing_action
+from SophiaBot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
