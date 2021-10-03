@@ -1,5 +1,5 @@
 import requests
-from Sophia import CASH_API_KEY, dispatcher
+from SophiaBot import CASH_API_KEY, dispatcher
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
@@ -61,6 +61,7 @@ __mod_name__ = "Currency"
 
 __help__ = """
 *Commands:*
+
 - /cash : currency converter
 Example syntax: /cash 1 USD LKR
 """
