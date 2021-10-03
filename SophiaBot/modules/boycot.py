@@ -1,8 +1,8 @@
 import os
 
-from Sophia import pbot
-from DaisyX.pyrogramee.pluginshelper import edit_or_reply
-from DaisyX.pyrogramee.pluginshelper import convert_to_image
+from SophiaBot import pbot
+from SophiaBot.pyrogramee.pluginshelper import edit_or_reply
+from SophiaBot.pyrogramee.pluginshelper import convert_to_image
 from pyrogram import filters
 from PIL import Image
 
