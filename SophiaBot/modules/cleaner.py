@@ -1,15 +1,15 @@
 
 import html
 
-from Sophia import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.chat_status import (
+from SophiaBot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from Sophia.modules.sql import cleaner_sql as sql
+from SophiaBot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
