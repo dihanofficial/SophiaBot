@@ -2,18 +2,18 @@ import html
 import random
 import time
 
-import Sophia.modules.fun_strings as fun_strings
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from Sophia.modules.helper_funcs.chat_status import is_user_admin
-from Sophia.modules.helper_funcs.alternate import typing_action
-from Sophia.modules.helper_funcs.filters import CustomFilters
-from Sophia.modules.helper_funcs.extraction import extract_user
+import SophiaBot.modules.fun_strings as fun_strings
+from SophiaBot import dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from SophiaBot.modules.helper_funcs.chat_status import is_user_admin
+from SophiaBot.modules.helper_funcs.alternate import typing_action
+from SophiaBot.modules.helper_funcs.filters import CustomFilters
+from SophiaBot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
 
-import Sophia.modules.helper_funcs.string_store as fun
+import SophiaBot.modules.helper_funcs.string_store as fun
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
@@ -344,12 +344,7 @@ def goodmorning(update, context):
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
-@run_async
-@typing_action
-def sophia(update, context):
-    message = update.effective_message
-    reply = random.choice(fun.SOPHIA)
-    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+
     
 
 __help__ = """
@@ -389,9 +384,7 @@ GDMORNING_HANDLER = DisableAbleMessageHandler(
 GDNIGHT_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"(?i)(gn|good night)"), goodnight, friendly="goodnight"
 )
-SOPHIA_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(sophi|sophia)"), sophia, friendly="sophia"
-)
+
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
@@ -409,7 +402,7 @@ dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(GDMORNING_HANDLER)
 dispatcher.add_handler(GDNIGHT_HANDLER)
-dispatcher.add_handler(SOPHIA_HANDLER)
+
 
 __mod_name__ = "Memes"
 __command_list__ = [
@@ -445,5 +438,4 @@ __handlers__ = [
     EIGHTBALL_HANDLER,
     GDMORNING_HANDLER,
     GDNIGHT_HANDLER,
-    SOPHIA_HANDLER,
 ]
