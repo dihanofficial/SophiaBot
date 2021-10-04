@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import Sophia.modules.sql.feds_sql as sql
-from Sophia import (
+import SophiaBot.modules.sql.feds_sql as sql
+from SophiaBot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from Sophia import (
     WOLVES,
     dispatcher,
 )
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.alternate import send_message
-from Sophia.modules.helper_funcs.chat_status import is_user_admin
-from Sophia.modules.helper_funcs.extraction import (
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.helper_funcs.alternate import send_message
+from SophiaBot.modules.helper_funcs.chat_status import is_user_admin
+from SophiaBot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from Sophia.modules.helper_funcs.string_handling import markdown_parser
+from SophiaBot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
