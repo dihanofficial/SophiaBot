@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from Sophia import EVENT_LOGS, LOGGER, dispatcher
-    from Sophia.modules.helper_funcs.chat_status import user_admin
-    from Sophia.modules.sql import log_channel_sql as sql
+    from SophiaBot import EVENT_LOGS, LOGGER, dispatcher
+    from SophiaBot.modules.helper_funcs.chat_status import user_admin
+    from SophiaBot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
