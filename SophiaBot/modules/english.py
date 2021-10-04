@@ -1,9 +1,3 @@
-import json
-
-import requests
-from PyDictionary import PyDictionary
-from telethon import *
-
 # Copyright (C) 2021 Dihan Official
 
 
@@ -22,9 +16,18 @@ from telethon import *
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+import json
+
+import requests
+from PyDictionary import PyDictionary
+from telethon import *
+
+
+
 from telethon.tl.types import *
 
-from Sophia.events import register
+from SophiaBot.events import register
 
 API_KEY = "6ae0c3a0-afdc-4532-a810-82ded0054236"
 URL = "http://services.gingersoftware.com/Ginger/correct/json/GingerTheText"
@@ -96,6 +99,7 @@ async def _(event):
 
 __help__ = """
 *Sophia can help you with English*
+
 *Commands:*
 • `/synonyms <word>`*:* find the synonyms of a word.
 • `/antonyms <word>`*:* find the antonyms of a word.
