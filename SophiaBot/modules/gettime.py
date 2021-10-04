@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from Sophia import TIME_API_KEY, dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
+from SophiaBot import TIME_API_KEY, dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
