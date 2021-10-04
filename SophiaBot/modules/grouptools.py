@@ -3,7 +3,7 @@ import os
 from pyrogram import filters
 
 from SophiaBot.pyrogramee.pluginshelper import member_permissions
-from Sophia import pbot as app
+from SophiaBot import pbot as app
 
 
 @app.on_message(filters.command("setgtitle") & ~filters.private)
