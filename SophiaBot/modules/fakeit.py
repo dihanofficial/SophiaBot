@@ -5,8 +5,8 @@ from faker import Faker
 from faker.providers import internet
 from telethon import events
 
-from Sophia.pyrogramee.telethonbasics import is_admin
-from Sophia import telethn as Galaxy
+from SophiaBot.pyrogramee.telethonbasics import is_admin
+from SophiaBot import telethn as Galaxy
 
 @Galaxy.on(events.NewMessage(pattern="/fakegen$"))
 async def hi(event):
