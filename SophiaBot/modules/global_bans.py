@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import Sophia.modules.sql.global_bans_sql as sql
-from Sophia.modules.sql.users_sql import get_user_com_chats
-from Sophia import (
+import SophiaBot.modules.sql.global_bans_sql as sql
+from SophiaBot.modules.sql.users_sql import get_user_com_chats
+from SophiaBot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from Sophia import (
     sw,
     dispatcher,
 )
-from Sophia.modules.helper_funcs.chat_status import (
+from SophiaBot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Sophia.modules.helper_funcs.extraction import (
+from SophiaBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Sophia.modules.helper_funcs.misc import send_to_list
+from SophiaBot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
