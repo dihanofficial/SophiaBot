@@ -2,7 +2,7 @@ import os
 
 from pyrogram import filters
 
-from Sophia.pyrogramee.pluginshelper import member_permissions
+from SophiaBot.pyrogramee.pluginshelper import member_permissions
 from Sophia import pbot as app
 
 
