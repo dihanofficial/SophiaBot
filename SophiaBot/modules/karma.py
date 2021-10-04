@@ -1,13 +1,13 @@
-from Sophia import pbot as app
-from Sophia.utils.errors import capture_err
-from Sophia.function.karmadb import (
+from SophiaBot import pbot as app
+from SophiaBot.utils.errors import capture_err
+from SophiaBot.function.karmadb import (
     update_karma,
     get_karma,
     get_karmas,
     int_to_alpha,
     alpha_to_int,
 )
-from Sophia.utils.filter_groups import karma_positive_group, karma_negative_group
+from SophiaBot.utils.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
 
 
