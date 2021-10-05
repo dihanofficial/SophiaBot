@@ -1,6 +1,6 @@
 
 import os
-from Sophia import telethn as tbot
+from SophiaBot import telethn as tbot
 import json
 import re
 
@@ -9,13 +9,13 @@ from bs4 import BeautifulSoup
 from requests import get
 from telethon import types
 from telethon.tl import functions
-from Sophia.events import register
+from SophiaBot.events import register
 from pymongo import MongoClient
-from Sophia import MONGO_DB_URI
+from SophiaBot import MONGO_DB_URI
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Sophia"]
+db = client["SophiaBot"]
 approved_users = db.approve
 
 async def is_register_admin(chat, user):
