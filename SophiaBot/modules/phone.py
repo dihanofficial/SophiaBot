@@ -25,8 +25,8 @@ import json
 
 import requests
 
-from Sophia import telethn as client
-from Sophia.events import register
+from SophiaBot import telethn as client
+from SophiaBot.events import register
 
 
 async def is_register_admin(chat, user):
@@ -51,7 +51,7 @@ async def is_register_admin(chat, user):
     else:
         return None
 
-# Join Our Channel t.me/dihanofficial
+# Join Our Channel @SophiaUpdates
 
 @register(pattern=r"^/phone (.*)")
 async def phone(event):
