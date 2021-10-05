@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Sophia import StartTime, dispatcher
-from Sophia.modules.helper_funcs.chat_status import sudo_plus
-from Sophia.modules.disable import DisableAbleCommandHandler
+from SophiaBot import StartTime, dispatcher
+from SophiaBot.modules.helper_funcs.chat_status import sudo_plus
+from SophiaBot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
