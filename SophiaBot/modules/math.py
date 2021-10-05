@@ -1,8 +1,8 @@
 import math
 
 import pynewtonmath as newton
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
+from SophiaBot import dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
