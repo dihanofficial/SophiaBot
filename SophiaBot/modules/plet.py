@@ -7,9 +7,9 @@ from PIL import Image
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.thonkify_dict import thonkifydict
+from SophiaBot import dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.thonkify_dict import thonkifydict
 
 
 @run_async
