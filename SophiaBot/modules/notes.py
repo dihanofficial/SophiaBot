@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import Sophia.modules.sql.notes_sql as sql
-from Sophia import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.handlers import MessageHandlerChecker
-from Sophia.modules.helper_funcs.chat_status import user_admin, connection_status
-from Sophia.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Sophia.modules.helper_funcs.msg_types import get_note_type
-from Sophia.modules.helper_funcs.string_handling import (
+import SophiaBot.modules.sql.notes_sql as sql
+from SophiaBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.helper_funcs.handlers import MessageHandlerChecker
+from SophiaBot.modules.helper_funcs.chat_status import user_admin, connection_status
+from SophiaBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from SophiaBot.modules.helper_funcs.msg_types import get_note_type
+from SophiaBot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
