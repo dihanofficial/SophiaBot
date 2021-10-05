@@ -116,7 +116,7 @@ file_helpo = file_help.replace("_", " ")
 __help__ = """
  - /specs <brand> <device>: Get device specifications info
 
-*Powerted by* @dihanofficial
+*Powerted by* @SophiaUpdates 
 """
 
 
