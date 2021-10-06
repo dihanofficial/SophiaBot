@@ -12,8 +12,8 @@ from telegram import TelegramError, Update
 from telegram.ext import run_async, CallbackContext
 from telegram.utils.helpers import mention_html
 
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
+from SophiaBot import dispatcher
+from SophiaBot.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
