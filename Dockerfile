@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Sophia
-RUN git clone -b shiken https://github.com/dihanofficial/sophia /root/Sophia
-WORKDIR /root/Sophia
+RUN git clone -b shiken https://github.com/dihanofficial/sophiaBot /root/SophiaBot
+WORKDIR /root/SophiaBot
 
 #Copy config file to /root/Sophia/Sophia
-COPY ./Sophia/sample_config.py ./Sophia/config.py* /root/Sophia/Sophia/
+COPY ./SophiaBot/sample_config.py ./SophiaBot/config.py* /root/SophiaBot/SophiaBot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Sophia"]
+CMD ["python3","-m","SophiaBot"]
