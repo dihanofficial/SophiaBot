@@ -1,7 +1,7 @@
 import subprocess
 
-from Sophia import LOGGER, dispatcher
-from Sophia.modules.helper_funcs.chat_status import dev_plus
+from SophiaBot import LOGGER, dispatcher
+from SophiaBot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
