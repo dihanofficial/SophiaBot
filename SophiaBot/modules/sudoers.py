@@ -13,8 +13,8 @@ import time
 import psutil
 from pyrogram import filters
 
-from Sophia import (bot_start_time, DEV_USERS, pbot)
-from Sophia.utils import formatter
+from SophiaBot import (bot_start_time, DEV_USERS, pbot)
+from SophiaBot.utils import formatter
 
 
 
