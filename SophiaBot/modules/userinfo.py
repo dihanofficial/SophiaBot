@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from Sophia import (
+from SophiaBot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from Sophia import (
     dispatcher,
     sw,
 )
-from Sophia.__main__ import STATS, TOKEN, USER_INFO
-import Sophia.modules.sql.userinfo_sql as sql
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.sql.global_bans_sql import is_user_gbanned
-from Sophia.modules.sql.afk_sql import is_afk, check_afk_status
-from Sophia.modules.sql.users_sql import get_user_num_chats
-from Sophia.modules.helper_funcs.chat_status import sudo_plus
-from Sophia.modules.helper_funcs.extraction import extract_user
-from Sophia import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from SophiaBot.__main__ import STATS, TOKEN, USER_INFO
+import SophiaBot.modules.sql.userinfo_sql as sql
+from SophiaBot.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.sql.global_bans_sql import is_user_gbanned
+from SophiaBot.modules.sql.afk_sql import is_afk, check_afk_status
+from SophiaBot.modules.sql.users_sql import get_user_num_chats
+from SophiaBot.modules.helper_funcs.chat_status import sudo_plus
+from SophiaBot.modules.helper_funcs.extraction import extract_user
+from SophiaBot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -529,14 +529,14 @@ When marked as AFK, any mentions will be replied to with a message to say you're
 *Self addded information:* 
  - /setme <text>*:* will set your info
  - /me*:* will get your or another user's info.
-*Examples:* 💡
+*Examples:*
  ➩ /setme I am a wolf.
  ➩ /me @username(defaults to yours if no user specified)
 
 *Information others add on you:* 
  - /bio*:* will get your or another user's bio. This cannot be set by yourself.
  - /setbio <text>*:* while replying, will save another user's bio 
-*Examples:* 💡
+*Examples:*
  ➩ /bio @username(defaults to yours if not specified).`
  ➩ /setbio This user is a wolf` (reply to the user)
 
