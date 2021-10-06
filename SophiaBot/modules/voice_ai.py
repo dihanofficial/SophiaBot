@@ -7,9 +7,9 @@ from requests import get
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from Sophia.conf import get_str_key
-from Sophia.events import register
-from Sophia import telethn as tbot
+from SophiaBot.conf import get_str_key
+from SophiaBot.events import register
+from SophiaBot import telethn as tbot
 
 IBM_WATSON_CRED_PASSWORD = get_str_key("IBM_WATSON_CRED_PASSWORD", None)
 IBM_WATSON_CRED_URL = get_str_key("IBM_WATSON_CRED_URL", None)
