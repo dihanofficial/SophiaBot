@@ -1,9 +1,9 @@
 import html
 
-from Sophia import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from Sophia.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.sql import reporting_sql as sql
+from SophiaBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from SophiaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from SophiaBot.modules.log_channel import loggable
+from SophiaBot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
