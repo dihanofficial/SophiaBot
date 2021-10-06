@@ -3,7 +3,7 @@
 ## Basic: Simple Plugins
 ```python3
 
-from Sophia.decorator import register
+from SophiaBot.decorator import register
 from .utils.disable import disableable_dec
 from .utils.message import get_args_str
 
@@ -24,10 +24,10 @@ __help__ = """
 ```python3
 # You can import env like this. If config present auto use config
 
-from Sophia.decorator import register
+from SophiaBot.decorator import register
 from .utils.disable import disableable_dec
 from .utils.message import get_args_str
-from Sophia.config import get_int_key, get_str_key
+from SophiaBot.conf import get_int_key, get_str_key
 
 HI_STRING = get_str_key("HI_STRING", required=True) # String
 MULTI = get_int_key("MULTI", required=True) #Intiger
@@ -49,8 +49,8 @@ __help__ = """
 
 ## Advanced: Pyrogram
 ```python3
-from Sophia.pyrogramee.pluginhelpers import admins_only
-from Sophia.pyrogramee.pyrogram import pbot
+from SophiaBot.pyrogramee.pluginhelpers import admins_only
+from SophiaBot import pbot
 
 @pbot.on_message(filters.command("hi") & ~filters.edited & ~filters.bot)
 @admins_only
@@ -68,8 +68,8 @@ __help__ = """
 ## Advanced: Telethon
 ```python3
 
-from Sophia.telethon import tbot
-from Sophia.events import register
+from SophiaBot.telethon import tbot
+from SophiaBot.events import register
 
 @register(pattern="^/hi$")
 async def hmm(event):
