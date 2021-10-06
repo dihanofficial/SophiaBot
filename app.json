@@ -78,8 +78,13 @@
          "description": "Required for database connections.",
          "required": true,
          "value": ""
-      },
-      "IBM_WATSON_CRED_URL": {
+    },
+    "WOLFRAM_ID": {
+      "description": "WOLFRAM ai api (no need)",
+      "value": "",
+      "required": false
+    },
+     "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
          "required": false
      },
