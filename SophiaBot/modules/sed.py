@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from Sophia import LOGGER, dispatcher
-from Sophia.modules.disable import DisableAbleMessageHandler
-from Sophia.modules.helper_funcs.regex_helper import infinite_loop_check
+from SophiaBot import LOGGER, dispatcher
+from SophiaBot.modules.disable import DisableAbleMessageHandler
+from SophiaBot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
