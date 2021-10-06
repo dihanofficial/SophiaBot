@@ -113,7 +113,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Sophia.config import Development as Config
+    from SophiaBot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -217,15 +217,15 @@ else:
         
          
 #install aiohttp session
-print("[sophia]: Initializing AIOHTTP Session")
+print("[Sophia]: Initializing AIOHTTP Session")
 aiohttpsession = ClientSession()    
     
 #install arq
-print("[sophia]: Initializing ARQ Client")
+print("[Sophia]: Initializing ARQ Client")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)        
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("sophia", API_ID, API_HASH)
-pbot = Client("sophiapyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("Sophia", API_ID, API_HASH)
+pbot = Client("sophiapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 #mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 dispatcher = updater.dispatcher
 
@@ -238,7 +238,7 @@ WHITELIST_USERS = list(WHITELIST_USERS)
 SUDO_USERS = list(SUDO_USERS)
 
 # Load at end to ensure all prev variables have been set
-from Sophia.modules.helper_funcs.handlers import (
+from SophiaBot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
