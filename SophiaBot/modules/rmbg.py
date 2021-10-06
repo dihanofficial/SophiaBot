@@ -1,5 +1,5 @@
-from Sophia import telethn as tbot
-from Sophia import MONGO_DB_URI
+from SophiaBot import telethn as tbot
+from SophiaBot import MONGO_DB_URI
 from pymongo import MongoClient
 import io
 import asyncio
@@ -9,9 +9,9 @@ from datetime import datetime
 import requests
 from telethon import types
 from telethon.tl import functions
-from Sophia import REM_BG_API_KEY
-from Sophia import TEMP_DOWNLOAD_DIRECTORY
-from Sophia.events import register
+from SophiaBot import REM_BG_API_KEY
+from SophiaBot import TEMP_DOWNLOAD_DIRECTORY
+from SophiaBot.events import register
 
 
 async def is_register_admin(chat, user):
@@ -38,7 +38,7 @@ async def is_register_admin(chat, user):
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Sophia"]
+db = client["SophiaBot"]
 approved_users = db.approve
 
 
