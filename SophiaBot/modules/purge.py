@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from Sophia import telethn
-from Sophia.modules.helper_funcs.telethn.chatstatus import (
+from SophiaBot import telethn
+from SophiaBot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
