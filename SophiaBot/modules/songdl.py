@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from Sophia.conf import get_str_key
-from Sophia.pyrogramee.pluginshelper import get_text, progress
-from Sophia import pbot
+from SophiaBot.conf import get_str_key
+from SophiaBot.pyrogramee.pluginshelper import get_text, progress
+from SophiaBot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
