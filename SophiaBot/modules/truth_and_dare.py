@@ -1,9 +1,9 @@
 import html
 import random
-import Sophia.modules.truth_and_dare_string as truth_and_dare_string
-from Sophia import dispatcher
+import SophiaBot.modules.truth_and_dare_string as truth_and_dare_string
+from SophiaBot import dispatcher
 from telegram import ParseMode, Update, Bot
-from Sophia.modules.disable import DisableAbleCommandHandler
+from SophiaBot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
