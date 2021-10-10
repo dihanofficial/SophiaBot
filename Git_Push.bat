@@ -1,7 +1,6 @@
 @echo off
 TITLE Github Quick-pushing 
 
-
 :: Print the branch cause people like me push to wrong branches and cry about it later. 
 echo Pushing to branch: 
 git branch
