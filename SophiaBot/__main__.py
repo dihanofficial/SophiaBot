@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """Hey there 👋! My name is *Sophia*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
+PM_START_TEXT = """Hey there 👋! My name is *ɴᴀʀᴜᴛᴏ*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
 
 STICKERS = (
       "CAACAgUAAx0CTpRfGwACF41hMfagTfWdHNFici1VtOCQVVNYmgACgh8AAsZRxhU6tKJa_ySnnCAE",
@@ -98,14 +98,14 @@ buttons = [
         InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/SophiaSupport_Official"),
     ],
     [
-        InlineKeyboardButton(text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ Add ɴᴀʀᴜᴛᴏ  to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),   
     ],
 ]
 
 HELP_STRINGS = """
 ✘✘✘ 𝗛𝗲𝗹𝗽𝗳𝘂𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 ✘✘✘
 
-Every possibility of Sophia is documentated here
+Every possibility of ɴᴀʀᴜᴛᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ is documentated here
 Click buttons to get help
 """
 
