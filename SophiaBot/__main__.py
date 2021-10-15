@@ -91,7 +91,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=" Sophia News 🙋‍♀️ ", url=f"https://t.me/SophiaUpdates"),
+        InlineKeyboardButton(text="NARUTO NEWS 🙋‍♂️ ", url=f"https://t.me/SophiaUpdates"),
         InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/SophiaSupport_Official"),
     ],
     [
