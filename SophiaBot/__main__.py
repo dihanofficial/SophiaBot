@@ -94,11 +94,11 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=" Naruto News 🙋‍♀️ ", url=f"https://t.me/SophiaUpdates"),
-        InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/SophiaSupport_Official"),
+        InlineKeyboardButton(text=" Naruto News 🙋‍♀️ ", url=f"https://t.me/Bot_updat_002"),
+        InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/bot_sup_002"),
     ],
     [
-        InlineKeyboardButton(text="➕ Add Me to your Group➕ ", url="t.me/SophiaSLBot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ Add Me to your Group➕ ", url="t.me/naruto_the_manager_bot?startgroup=true"),   
     ],
 ]
 
