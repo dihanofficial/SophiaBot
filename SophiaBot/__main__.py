@@ -45,8 +45,7 @@ from telegram.ext import (
     Filters,
     MessageHandler,
 )
-from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
-from telegram.utils.helpers import escape_markdown
+from telegram.ext.dispatcher import DispatcherHandlerStop,UTR4E""" m telegram.utils.helpers import escape_markdown
 
 
 def get_readable_time(seconds: int) -> str:
@@ -77,10 +76,8 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """Hey there 👋! My name is *ɴᴀʀᴜᴛᴏ*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
 
 STICKERS = (
-      "CAACAgUAAx0CTpRfGwACF41hMfagTfWdHNFici1VtOCQVVNYmgACgh8AAsZRxhU6tKJa_ySnnCAE",
-      "CAACAgUAAx0CTpRfGwACF5phMfi5vgKwQFg6KuzHiEc79QFT0QACCR4AAsZRxhVu32VqEb3_1SAE",
-      "CAACAgUAAx0CTpRfGwACGIBhQcGJDHuuXsU5el3I86SEx3nTpgAC2R8AAsZRxhUpEe6EcVukQCAE",
-)    
+      "CAACAgUAAx0CWrNeBQAC8xxhaWWJYna16TZXVcOdvPS9InnhfgACrAMAAn37MVV0qkjG9l_UTR4E"
+)  
 
 
 buttons = [
