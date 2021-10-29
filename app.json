@@ -20,7 +20,7 @@
    ],
    "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
+      "url": "https://github.com/InukaAsith/heroku-buildpack-python"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
@@ -214,7 +214,7 @@
          "value": ""
       },             
       "REM_BG_API_KEY": {
-         "description": "",
+         "description": "Get api  https://www.remove.bg/",
          "required": false,
          "value": ""
       }
