@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """Hey there 👋! My name is *Sophia*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
+PM_START_TEXT = """Hey there 👋! My name is *Naruto*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
 
 STICKERS = (
       "CAACAgUAAx0CTpRfGwACF41hMfagTfWdHNFici1VtOCQVVNYmgACgh8AAsZRxhU6tKJa_ySnnCAE",
@@ -94,11 +94,11 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=" Sophia News 🙋‍♀️ ", url=f"https://t.me/SophiaUpdates"),
-        InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/SophiaSupport_Official"),
+        InlineKeyboardButton(text=" Naruto News 🙋‍♀️ ", url=f"https://t.me/Bot_updat_002"),
+        InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/bot_sup_002"),
     ],
     [
-        InlineKeyboardButton(text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ Add Me to your Group➕ ", url="t.me/naruto_the_manager_bot?startgroup=true"),   
     ],
 ]
 
