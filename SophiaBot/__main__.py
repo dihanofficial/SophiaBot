@@ -81,15 +81,7 @@ STICKERS = (
       "CAACAgUAAx0CTpRfGwACF5phMfi5vgKwQFg6KuzHiEc79QFT0QACCR4AAsZRxhVu32VqEb3_1SAE",
       "CAACAgUAAx0CTpRfGwACGIBhQcGJDHuuXsU5el3I86SEx3nTpgAC2R8AAsZRxhUpEe6EcVukQCAE",
 )    
-
-
-buttons = [
-    [
-        InlineKeyboardButton(text=" Commands Help ❓", callback_data="help_back"),
-    ]
    
-
-
 HELP_STRINGS = """
 ✘✘✘ 𝗛𝗲𝗹𝗽𝗳𝘂𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 ✘✘✘
 
