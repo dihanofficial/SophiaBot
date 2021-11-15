@@ -206,7 +206,7 @@ For starters click on this button
 - [Dihan Randila](https://github.com/dihanofficial): Dev / Owner
 - [InukaAsith](https://github.com/InukaAsith): Dev 
 - [Deshadeeth Thisarana](https://github.com/Deshadeeth-Thisarana) 
-- [Percy Official](https://github.com/PercyOfficial)
+- [Rodolphus Lestrang](https://github.com/PercyOfficial)
 
 ## Special Credits
 
