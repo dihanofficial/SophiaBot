@@ -207,6 +207,7 @@ For starters click on this button
 - [InukaAsith](https://github.com/InukaAsith): Dev 
 - [Deshadeeth Thisarana](https://github.com/Deshadeeth-Thisarana) 
 - [Rodolphus Lestrang](https://github.com/PercyOfficial)
+- [Damantha Jasinghe](https://github.com/Damantha126)
 
 ## Special Credits
 
