@@ -68,12 +68,12 @@ async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/SophiaSLBot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/thunder_gohelp_bot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Sophia](https://github.com/dihanofficial/SophiaBot):**
+**[Thunder GoHelp Support](https://t.me/thundergotechnology):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
@@ -314,7 +314,7 @@ async def deezer_func(answers, text):
     return answers
 
 
-# Used my api key here, don't fuck with it
+# Used my api key here, don't Miss use with it
 async def shortify(url):
     if "." not in url:
         return
