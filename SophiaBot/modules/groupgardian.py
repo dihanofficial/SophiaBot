@@ -453,7 +453,7 @@ async def del_profanity(event):
  
 __help__ = """
 *Group Guardian:*
-✪ Sophia can protect your group from NSFW senders, Slag word users and also can force members to use English
+✪ Thunder GoHelp can protect your group from NSFW senders, Slag word users and also can force members to use English
  
 *Commmands*
  - /nsfwguardian <i>on/off</i> - Enable|Disable Porn cleaning
