@@ -1,13 +1,13 @@
 {
-      "name": "Sophia",
+      "name": "Thunder GoHelp",
       "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/55ee43a1fe97fefd29ed0.jpg",
+      "logo": "https://telegra.ph/file/279e977ee66947144e7c4.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Sophia"
+         "ThunderGoHelp"
       ],   
    "repository": "https://github.com/dihanofficial/SophiaBot",
    "addons": [
