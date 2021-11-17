@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By @SophiaSLBot.</b>
+Gathered By @thunder_gohelp_bot.</b>
 """
     
     
@@ -120,7 +120,7 @@ __help__ = """
 *Commands*
 - /country [country name]*:* Gathering info about given country
 
-@SophiaUpdates
+@thundergotechnology
 """
 
 __mod_name__ = "Country"
