@@ -49,7 +49,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my [Pm](http://t.me/SophiaSLBot)")
+       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my [Pm](https://t.me/thunder_gohelp_bot)")
        return
 
     input_str = event.pattern_match.group(1)
