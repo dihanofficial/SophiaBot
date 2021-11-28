@@ -86,7 +86,6 @@ if ENV:
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
-    #VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
@@ -97,7 +96,6 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
-    #STRING_SESSION = os.environ.get("STRING_SESSION", None)
     WALL_API = os.environ.get("WALL_API", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
@@ -187,8 +185,7 @@ else:
     REM_BG_API_KEY = Config.REM_BG_API_KEY
     GENIUS_API_TOKEN = Config.GENIUS_API_TOKEN
     LASTFM_API_KEY = Config.LASTFM_API_KEY
-    #VIRUS_API_KEY = Config.VIRUS_API_KEY
-    #STRING_SESSION = Config.STRING_SESSION
+
     
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
@@ -224,9 +221,8 @@ aiohttpsession = ClientSession()
 print("[Sophia]: Initializing ARQ Client")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)        
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Sophia", API_ID, API_HASH)
-pbot = Client("sophiapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
-#mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
+telethn = TelegramClient("sophia", API_ID, API_HASH)
+pbot = Client("sophiapyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
