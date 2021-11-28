@@ -76,11 +76,6 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """Hey there 👋! My name is *Sophia*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
 
-STICKERS = (
-      "CAACAgUAAx0CTpRfGwACF41hMfagTfWdHNFici1VtOCQVVNYmgACgh8AAsZRxhU6tKJa_ySnnCAE",
-      "CAACAgUAAx0CTpRfGwACF5phMfi5vgKwQFg6KuzHiEc79QFT0QACCR4AAsZRxhVu32VqEb3_1SAE",
-      "CAACAgUAAx0CTpRfGwACGIBhQcGJDHuuXsU5el3I86SEx3nTpgAC2R8AAsZRxhUpEe6EcVukQCAE",
-)    
 
 
 buttons = [
@@ -211,10 +206,6 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_sticker(
-                random.choice(STICKERS),
-                timeout=60,
-            )
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -801,10 +792,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! 💫 ")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! 💫 | Join my Group @SophiaSupport_Official ❤")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to @SophiaSupport_Official, go and check!"
+                "Bot isnt able to send message to Support Group, go and check!.| Support Group @SophiaSupport_Official ❤"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
