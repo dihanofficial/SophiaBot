@@ -194,9 +194,9 @@
          "value": ""
       }, 
       "ARQ_API_URL": {
-         "description": "Defult -> https://thearq.tech/",
+         "description": "Defult -> https://grambuilders.tech",
          "required": true,
-         "value": "https://thearq.tech/"
+         "value": "https://grambuilders.tech"
       },
       "ARQ_API_KEY": {
          "description": "Start this boat https://t.me/ARQRobot. Get the key ",
