@@ -209,7 +209,6 @@ For starters click on this button
 #### Contributors
 - [Dihan Randila](https://github.com/dihanofficial): Dev / Owner
 - [InukaAsith](https://github.com/InukaAsith): Dev 
-- [Deshadeeth Thisarana](https://github.com/Deshadeeth-Thisarana) 
 - [Rodolphus Lestrang](https://github.com/PercyOfficial)
 - [Damantha Jasinghe](https://github.com/Damantha126)
 - [Denuwan](https://github.com/ImDenuwan)
