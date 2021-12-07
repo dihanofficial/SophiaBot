@@ -24,7 +24,11 @@
 
 ## Avaiilable on Telegram as [@SophiaSLBot](https://t.me/sophiaslbot)
 
+### Video Tutorial:
+Complete guide on deploying @SophiaSLBot's clone on Heroku.
 
+🙋‍♂️ Video by [Dihan Randila](https://youtu.be/Yyw2TfwQTSg) ☆
+[![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://youtu.be/Yyw2TfwQTSg)
 
 ### Deploy To Heroku</h4>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dihanofficial/Sophiabot)
