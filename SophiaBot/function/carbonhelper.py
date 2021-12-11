@@ -15,9 +15,6 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 from wget import download
 
-
-
-
 async def make_carbon(code):
     url = "https://carbonara.vercel.app/api/cook"
     async with aiosession.post(url, json={"code": code}) as resp:
