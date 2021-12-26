@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """Hey there! My name is <b>Sophia.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"""
+PM_START_TEXT = """Hey there! My name is <b>Jarvis.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"""
 
 buttons = [
     [
