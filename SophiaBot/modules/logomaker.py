@@ -260,6 +260,6 @@ __help__ = """
  - /biglogo text :  Create your logo Bigger Than `logo`
  - /wlogo text :  Create your logo with your name
 
-Powerted By @SophiaUpdates &  Dihan Official 
+Powerted By @Missharelyluna_bot &  LUNA
  """
 __mod_name__ = "Logo Maker"
