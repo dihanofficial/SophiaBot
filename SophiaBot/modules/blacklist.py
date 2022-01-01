@@ -1,5 +1,4 @@
-import html
-import re
+import html, re
 
 from telegram import ParseMode, ChatPermissions
 from telegram.error import BadRequest
