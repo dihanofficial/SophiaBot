@@ -1,4 +1,4 @@
-# SophiaBot example config
+# Shadowbot example config
 
 
 # Basic
@@ -16,7 +16,7 @@ MONGO_URI: "mongodb+srv://dfsdfX:dfsfdX@cluster0.df4j.mongodb.net/myFirstDatabas
 
 MONGO_URI2: ""
 MONGO_PORT: 27017
-MONGO_DB': 'Sophia'
+MONGO_DB': 'Shadow'
 
 API_PORT': 8080
 
